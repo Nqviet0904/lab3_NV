@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form method="post" action="" autocomplete="off" enctype="multipart/form-data" id="frm1"
+        style="text-align:justify;height:628px; width:500px">
+        <table>
+            <tr>
+                <caption style="background-color:#5d8bdd;color:white;border: 1px solid #5d8bdd;width:auto">ĐĂNG KÝ</caption>
+            </tr>
+            <tr>
+                <th style="width:200px">MSSV:</th>
+                <td>
+                    <input style="margin-top:16px" type="text" id="mssv" size="10" maxlength="7" required placeholder="7 kí tự">
+
+                </td>
+            </tr>
+            <tr>
+                <th style="width:200px">Họ tên:</th>
+                <td>
+                    <input style="margin-top:16px" type="text" id="hoten" size="20" maxlength="20" required placeholder="không rỗng">
+                </td>
+            </tr>
+            <tr>
+                <th style="width:200px">Giới tính:</th>
+                <td>
+                    <input style="margin-top:16px" type="radio" name="gioitinh">Nam
+                    <input style="margin-top:16px" type="radio" name="gioitinh">Nữ
+                </td>
+            </tr>
+            <tr>
+                <th style="width:200px">Ngày Sinh:</th>
+                <td>
+                    <input style="margin-top:16px" type="date" id="ngaysinh">
+                </td>
+            </tr>
+            <tr>
+                <th style="width:200px">Khoá học:</th>
+                <td>
+                    <input style="margin-top:16px" type="text" id="khoahoc" size="7" maxlength="5" placeholder="là số dương"  >
+                </td>
+            </tr>
+            <tr>
+                <th style="width:200px">Số ĐT:</th>
+                <td>
+                    <input style="margin-top:16px" type="text" id="numberphone" size="20" maxlength="10" required placeholder="nhập 10 số">
+                </td>
+            </tr>
+            <tr>
+                <th style="width:200px">Địa chỉ:</th>
+                <td>
+                    <textarea style="margin-top:16px" name="adress" id="" cols="35" rows="8" placeholder="không rỗng"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th style="width:200px">NNLT Yêu Thích:</th>
+                <td>
+                    <input style="margin-top:16px" type="checkbox" name="NNLT" size="20" maxlength="5">HTML
+                    <input style="margin-top:16px" type="checkbox" name="NNLT" size="20" maxlength="5">CSS
+                    <input style="margin-top:16px" type="checkbox" name="NNLT" size="20" maxlength="5">JavaScript
+                </td>
+            </tr>
+            <tr>
+                <th style="width:200px">Chọn ảnh đại diện:</th>
+                <td>
+                    <input style="margin-top:16px" type="file">
+                </td>
+            </tr>
+            <tr>
+                <th style="width:200px">Mật khẩu:</th>
+                <td>
+                    <input style="margin-top:16px" type="text" id="password" required maxlength="20" size="20" placeholder="từ 8-20 kí tự">
+                </td>
+            </tr>
+            <tr>
+                <th style="width:200px">Trường</th>
+                <td>
+                    <select style="margin-top:16px" name="" id="">
+                        <option value="" checked>--Chọn--</option>
+                        <option value="">ĐH Cần Thơ</option>
+                        <option value="">ĐH FPT</option>
+                        <option value="">ĐH Nam Cần Thơ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+
+                <th style="width:200px">
+                <td>
+                    <input  type="submit" value="Đăng ký" style="background-color:#e46929; color:white;float:right;margin-right: 32px;margin-top:16px">
+                </td>
+                </th>
+
+
+
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+
+
+html{
+    font-family: Helvetica,arial,sans-serif;
+    font-size:17px;
+}
+#head{
+
+}
+#nav .header-search {
+    float: right;
+}
+
+#nav {
+}
+#nav >a{
+    border: 1px solid #ccc7c8;
+    border-radius:3px;
+    font-size:17px;
+}
