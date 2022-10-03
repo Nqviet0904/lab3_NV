@@ -1,0 +1,254 @@
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  font: 1.2em Helvetica, arial, sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header-cell"
+    "nav-cell"
+    "main-cell"
+    "footer-cell";
+}
+main,
+header,
+footer {
+  border: 1px solid #ccc7c8;
+  background-color: #fff;
+  border-radius: 5px;
+}
+header {
+  grid-area: header-cell;
+  margin-bottom: 2px;
+  height: 100px;
+  padding: 0 5px;
+  background-image: url(../img/header.png);
+}
+.header--img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header-img1 {
+  height: 100px;
+  position: absolute;
+  top: -30px;
+  animation: img1 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes img1 {
+  from {
+    left: 80%;
+  }
+  to {
+    left: 30%;
+  }
+}
+#header-img2 {
+  height: 70px;
+  position: absolute;
+  top: -5px;
+  animation: img2 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes img2 {
+  from {
+    left: 80%;
+  }
+  to {
+    left: 45%;
+  }
+}
+#header-img3 {
+  height: 80px;
+  position: absolute;
+  top: 0;
+  animation: img3 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes img3 {
+  from {
+    left: 80%;
+  }
+  to {
+    left: 63%;
+  }
+}
+nav {
+  grid-area: nav-cell;
+  margin-top: 20px;
+}
+.color {
+  float: left;
+  margin: 3px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 2px 4px;
+  height: 20px;
+  background: #ffffff80;
+  text-decoration: none;
+  font-size: 17px;
+  color: #ed4190;
+  text-align: center;
+  box-shadow: 0 0 3px 0 #00000066, 0 0 2px 0 #0000004d;
+}
+.color:hover {
+  color: #fff;
+  background-color: #ed4190;
+}
+.search {
+  float: right;
+  padding-top: 3px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+}
+.icon1 {
+  padding: 4px;
+  background: #cddc39;
+  min-width: 30px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+.icon1:hover {
+  color: #ed4190;
+}
+.icon2 {
+  padding: 4px;
+  background: #cddc39;
+  min-width: 30px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.icon2:hover {
+  color: #ed4190;
+}
+
+.img_home {
+  width: 100%;
+}
+
+.title1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 34px;
+  margin: 12px 0 16px;
+  font-size: 28px;
+  color: #f90b6d;
+  text-align: center;
+}
+
+.empty {
+  position: relative;
+  left: 50%;
+  margin: 12px 0 16px;
+  width: 200px;
+  height: 3px;
+  transform: skewX(-12deg) translateX(-50%);
+  background-image: radial-gradient(#cddc39, #fff);
+}
+.title2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 5px 0 10px;
+  color: #f90b6d;
+}
+
+.content1 {
+  display: flex;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.content1 img {
+  width: 30%;
+  border-radius: 5px;
+}
+.content1 p {
+  width: 69%;
+  text-align: justify;
+}
+.content2 {
+  display: flex;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+.content2 video {
+  width: 30%;
+  border-radius: 5px;
+}
+.content2 p {
+  width: 69%;
+  text-align: justify;
+}
+.title3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 5px 0 10px;
+  color: #f90b6d;
+  break-before: column;
+}
+.box {
+  column-count: 2;
+}
+.container {
+  display: flex;
+  margin-bottom: 5px;
+  width: 100%;
+  justify-content: space-around;
+}
+.container-title {
+  display: inline-block;
+  border: 1px solid #ed4190;
+  border-radius: 5px;
+  padding-top: 5px;
+  width: 24%;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  margin-top: 2px;
+  padding: 0 5px;
+  border: 1px solid #ccc7c8;
+  border-radius: 5px;
+  color: #000;
+  text-align: center;
+}
+footer p {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+footer i {
+  color: #ed4190;
+}
+.top {
+  position: fixed;
+  z-index: 100;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  color: #ed4190;
+}
+.top img {
+  width: 100%;
+  height: 100%;
+}
