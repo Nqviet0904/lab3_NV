@@ -11,7 +11,6 @@ header,footer,main{
   border-radius: 5px;
 }
 body {
-  
   max-width: 1024px;
   margin: 0 auto;
   font: 1.1em Helvetica, arial, sans-serif;
@@ -238,7 +237,6 @@ text-transform: uppercase;
   margin: 8px;
 }
 .product-bottom {
-  color:#fff;
   width: 97%;
   background-image: linear-gradient(#cddc39,#fff);
   padding: 3px 3px;

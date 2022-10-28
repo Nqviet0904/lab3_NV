@@ -45,7 +45,6 @@ body {
   left: 50%;
   width: 170px;
   height: 3px;
-
   margin-top: 0px;
   transform: skewX(-12deg) translateX(-50%);
   background-image: radial-gradient(#cddc39, #fff);
