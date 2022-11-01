@@ -36,43 +36,45 @@
     </header>
     <main>
         <article>
-            <div class="login">
-                <div class="login-title">
-                    <h1>Đăng Nhập</h1>
-                    <p class="empty"></p>
-                </div>
-                <div class="login-user">
-                    <table>
-                        <tr colspan="2">
-                            <img src="../asset/img/userlogin.png" class="login-img" alt="login">
-                        </tr>
-                        <td>
-                            <i class="login-icon fa-solid fa-envelope"></i>
-                            <input type="text" size="20" maxlength="20" placeholder="Nhập email">
-                        </td>
-                        </tr>
-
-                        <td>
-                            <i class="login-icon fa-sharp fa-solid fa-key"></i>
-                            <input type="text" size="20" maxlength="20" placeholder="Nhập mật khẩu">
-                        </td>
-                        </tr>
-                        <tr>
-                            <th colspan="2">
-                                Bạn Quên
-                                <a href="#">Mật Khẩu?</a>
-                                <input type="checkbox">Ghi nhớ cho lần đăng nhập sau
-                            </th>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input type="submit" value="Đăng Nhập" name="" id="">
-                                <input type="reset" value="Huỷ">
+            <form action="" method = "get" onsubmit = "return login(this);">
+                <div class="login">
+                    <div class="login-title">
+                        <h1>Đăng Nhập</h1>
+                        <p class="empty"></p>
+                    </div>
+                    <div class="login-user">
+                        <table>
+                            <tr colspan="2">
+                                <img src="../asset/img/userlogin.png" class="login-img" alt="login">
+                            </tr>
+                            <td>
+                                <i class="login-icon fa-solid fa-envelope"></i>
+                                <input name ="email" type="text" size="20" maxlength="20" placeholder="Nhập email">
                             </td>
-                        </tr>
-                    </table>
+                            </tr>
+    
+                            <td>
+                                <i class="login-icon fa-sharp fa-solid fa-key"></i>
+                                <input id ="password" name="password" type="password" size="20" maxlength="20" placeholder="Nhập mật khẩu">
+                            </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    Bạn Quên
+                                    <a href="#">Mật Khẩu?</a>
+                                    <input  type="checkbox">Ghi nhớ cho lần đăng nhập sau
+                                </th>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" value="Đăng Nhập" name="" id="">
+                                    <input type="reset" value="Huỷ">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
+            </form>
         </article>
 
     </main>
@@ -88,6 +90,7 @@
         </p>
     </footer>
     </div>
+    <script src="../asset/js/dangnhap.js"></script>
 </body>
 
 </html>

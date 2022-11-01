@@ -177,9 +177,9 @@ main{
     text-align: justify;
     width: 100%;
     border-radius: 5px;
-    height: 300px;
+    height: 400px;
     border: 1px solid #ccc7c8;
-    margin-top: 180px;
+    margin-top: 120px;
 }
 .register-user a {
     color:rgb(15, 40, 227);
@@ -188,6 +188,13 @@ main{
     width: 50%;
     margin-left: 30%;
     margin-top: 20px;
+}
+.fa-user{
+  padding:  6px;
+  color:#fff;
+  margin-right:11px;
+  background-color: #cddc39;
+
 }
 .register-tittle{
     position: relative;
@@ -198,6 +205,7 @@ main{
 }
 .register-icon{
     padding: 4px;
+    margin-right: 6px;
     background-color: #cddc39;
     color:#fff
 }

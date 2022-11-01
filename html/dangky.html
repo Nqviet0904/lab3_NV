@@ -36,7 +36,7 @@
     </header>
     <main>
         <article>
-            <form action="post">
+            <form method="post" id = "form"onsubmit = "return registeruser(this);" action="#"  enctype="multipart/form-data">
             <div class="register">
                 <div class="register-user">
                     <table>
@@ -45,21 +45,29 @@
                             <p class="empty"></p>
                         </div>
                         <tr>
+                            <i id="user"class="fa-solid fa-user"></i>
+                            <input name ="user"type="text" placeholder="Vui lòng nhập họ tên">
+                        </tr>
+                        <tr>
                             <td>
                                 <i class="register-icon fa-solid fa-envelope"></i>
-                                <input type="text" placeholder="Vui lòng nhập email" size="20" maxlength="20">
+                                <input name ="email" type="text" id="email" placeholder="Vui lòng nhập email" size="20" >
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <i class="register-icon fa-sharp fa-solid fa-key"></i>
-                                <input type="password" placeholder="Vui lòng nhập mật khẩu" size="20" maxlength="20">
+                                <input id = "password" 
+                                name="password"
+                                type="password" placeholder="Vui lòng nhập mật khẩu" size="20" >
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <i class="register-icon fa-sharp fa-solid fa-key"></i>
-                                <input type="password" placeholder="Vui lòng nhập mật khẩu" size="20" maxlength="20">
+                                <input id = "repeat-password"
+                                name = "repeatpassword"
+                                type="password" placeholder="Vui lòng nhập lại mật khẩu" size="20" >
                             </td>
                         </tr>
                         <tr>
@@ -71,9 +79,16 @@
                             </td>
                         </tr>
                         <tr>
+                            
                             <td>
-                                <i class="fa-solid fa-file feedback-fa register-icon"></i></i>
-                                <input type="file">
+                                <textarea name="address" id="address" cols="26" rows="3" placeholder="Vui lòng nhập địa chỉ liên hệ"></textarea>
+                            </td>
+                        </tr>
+                      
+                        <tr>
+                            <td colspan="2">
+                                <input type="reset" value="Huỷ">
+                                <input id="click" type="submit" value="Đăng Ký">
                             </td>
                         </tr>
                         <tr>
@@ -81,12 +96,6 @@
                                 Thông qua việc tạo tài khoản, bạn đồng ý với
                                 <a href="#">Điểu Khoản & Quyền riêng tư của chúng tôi</a>
                             </th>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input type="reset" value="Huỷ">
-                                <input type="submit" value="Đăng Ký">
-                            </td>
                         </tr>
                     </table>
                 </div>
@@ -106,6 +115,7 @@
         </p>
     </footer>
     </div>
+    <script src = "../asset/js/dangky.js"></script>
 </body>
 
 </html>
