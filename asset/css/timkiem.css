@@ -176,6 +176,10 @@
     color:#ed4190;
     margin: 16px 0px;
   }
+#result{
+  margin: 16px 16px;
+  color:black;
+  }
 
 #footer {
   position: relative;
