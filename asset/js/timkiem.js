@@ -4,7 +4,7 @@ var search = document.getElementById("demo");
 //   response.json();
 // })
 // .then((data)=>console.log(data))
-var data = localStorage.getItem('search');
+var data = sessionStorage.getItem('search');
 
 var result = document.getElementById('result');
 result.innerHTML = data;

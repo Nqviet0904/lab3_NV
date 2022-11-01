@@ -36,7 +36,7 @@ search.addEventListener("keypress", function (e) {
         text = text + htmls;
       }
     }
-    window.localStorage.setItem("search", text);
+    window.sessionStorage.setItem("search", text);
     window.location.href = "./timkiem.html";
   }
 });
