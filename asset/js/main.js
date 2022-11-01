@@ -16,9 +16,6 @@ var text = "";
     }
   }
   for (var i = 0; i < h2elements.length; i++) {
-    console.log(
-      h2elements[i].innerText.toUpperCase().includes(inputsearch.value.toUpperCase())
-    );
     if (
       h2elements[i].innerText.toUpperCase().includes(inputsearch.value.toUpperCase())
     ) {
@@ -27,8 +24,7 @@ var text = "";
     }
   }
   for (var i = 0; i < pelements.length; i++) {
-      console.log(pelements[i].innerText.toUpperCase().includes(inputsearch.value.toUpperCase())
-    );
+
     if (
       pelements[i].innerText.toUpperCase().includes(inputsearch.value.toUpperCase())
     ) {
@@ -36,7 +32,12 @@ var text = "";
       text = text + htmls;
     }
   }
-  window.sessionStorage.setItem("search", text);
+  if (text == ""){
+    window.sessionStorage.setItem("search", "Không Tìm Thấy");
+  }
+  else{
+    window.sessionStorage.setItem('search',text);
+  }
 }
 inputsearch.addEventListener("keypress", function (e) {
   if (e.keyCode === 13 && inputsearch.value.length > 0) {
@@ -46,11 +47,7 @@ inputsearch.addEventListener("keypress", function (e) {
 });
 btnsearch.addEventListener('click',function(){
   if (inputsearch.value.length >0){
-  console.log("abc")
-
     xuli();
-  console.log("loi")
-
     window.location.href = "./timkiem.html"
   }
 })

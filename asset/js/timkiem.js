@@ -5,7 +5,9 @@ var search = document.getElementById("demo");
 // })
 // .then((data)=>console.log(data))
 var data = sessionStorage.getItem('search');
-
+if(data== null){
+  console.log("NULL");
+}
 var result = document.getElementById('result');
 result.innerHTML = data;
 
