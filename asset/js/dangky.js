@@ -1,8 +1,15 @@
 
 function registeruser(frm){
+    
     var user = {
-     
+
     }
+
+    
+
+    
+    var array = {
+    };
     var emailreg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if (frm.user.value.length<4){
         alert("Tên không hợp lại vui lòng nhập lại");
@@ -38,12 +45,11 @@ function registeruser(frm){
         user.password = frm.password.value;
         user.name = frm.user.value;
         user.email = frm.email.value;
-        
-        console.log(user);
         alert("Dữ Liệu đã được gửi đi");
         location.reload()
+        console.log(user)
         var userjson = JSON.stringify(user);
-        window.sessionStorage.setItem("user",userjson);
+        window.localStorage.setItem("user",userjson);
         return true;
 }
 

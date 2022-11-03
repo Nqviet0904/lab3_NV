@@ -40,13 +40,14 @@ var text = "";
   }
 }
 inputsearch.addEventListener("keypress", function (e) {
-  if (e.keyCode === 13 && inputsearch.value.length > 0) {
+  if (e.keyCode === 13 && inputsearch.value.trim().length >0) {
     xuli();
+    
     window.location.href = "./timkiem.html";
   }
 });
 btnsearch.addEventListener('click',function(){
-  if (inputsearch.value.length >0){
+  if ( inputsearch.value.trim().length >0){
     xuli();
     window.location.href = "./timkiem.html"
   }

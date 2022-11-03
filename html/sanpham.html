@@ -20,7 +20,7 @@
             <img src="../asset/img/header-img2.png" class="header-img2" alt="">
             <img src="../asset/img/header-img3.png" class="header-img3" alt="">
             <nav>
-                <a href="#trangchu.html">Trang Chủ</a>
+                <a href="trangchu.html">Trang Chủ</a>
                 <a href="./gioitheu.html">Giới Thiệu</a>
                 <a href="./sanpham.html">Sản Phẩm</a>
                 <a href="./tintuc.html">Tin Tức</a>
@@ -33,7 +33,7 @@
                 <input id="input-search" class="header-text-search" size="25" type="text"
                     placeholder="Nhập nội dung cần tìm...">
                 <button id="btn-search"> <a><i class="fa-solid fa-magnifying-glass ti-search"></i></a></button>
-                <a href=""><i class="fa-solid fa-cart-shopping ti-shopping-cart"></i></i></a>
+                <a href="./donhang.html"><i class="fa-solid fa-cart-shopping ti-shopping-cart"></i></i></a>
             </div>
     </header>
     <main id="main">
@@ -57,8 +57,8 @@
                     <div class="product-bottom">
                         <span class="product-bottom_input">
                             Số lượng:
-                            <input type="number" min="0" max="100" size="3">
-                            <button type="submit">Đặt Hàng</button>
+                            <input id="sp001" type="number" min="0" max="100" size="3">
+                            <button onclick="addCart('sp001')">Đặt Hàng</button>
                         </span>
                     </div>
                 </div>
@@ -76,8 +76,8 @@
                     <div class="product-bottom">
                         <span class="product-bottom_input">
                             Số lượng:
-                            <input type="number" min="0" max="100" size="3">
-                            <button type="submit">Đặt Hàng</button>
+                            <input id="sp002" type="number" min="0" max="100" size="3">
+                            <button onclick="addCart('sp002')">Đặt Hàng</button>
                         </span>
                     </div>
                 </div>
@@ -95,8 +95,8 @@
                     <div class="product-bottom">
                         <span class="product-bottom_input">
                             Số lượng:
-                            <input type="number" min="0" max="100" size="3">
-                            <button type="submit">Đặt Hàng</button>
+                            <input id="sp003" type="number" min="0" max="100" size="3">
+                            <button onclick="addCart('sp003')">Đặt Hàng</button>
                         </span>
                     </div>
                 </div>
@@ -120,8 +120,8 @@
                     <div class="product-bottom">
                         <span class="product-bottom_input">
                             Số lượng:
-                            <input type="number" min="0" max="100" size="3">
-                            <button type="submit">Đặt Hàng</button>
+                            <input id="sp004" type="number" min="0" max="100" size="3">
+                            <button onclick="addCart('sp004')">Đặt Hàng</button>
                         </span>
                     </div>
                 </div>
@@ -139,8 +139,8 @@
                     <div class="product-bottom">
                         <span class="product-bottom_input">
                             Số lượng:
-                            <input type="number" min="0" max="100" size="3">
-                            <button type="submit">Đặt Hàng</button>
+                            <input id="sp005" type="number" min="0" max="100" size="3">
+                            <button onclick="addCart('sp005')">Đặt Hàng</button>
                         </span>
                     </div>
                 </div>
@@ -158,8 +158,8 @@
                     <div class="product-bottom">
                         <span class="product-bottom_input">
                             Số lượng:
-                            <input type="number" min="0" max="100" size="3">
-                            <button type="submit">Đặt Hàng</button>
+                            <input id="sp006" type="number" min="0" max="100" size="3">
+                            <button onclick="addCart('sp006')">Đặt Hàng</button>
                         </span>
                     </div>
                 </div>
@@ -183,8 +183,8 @@
                     <div class="product-bottom">
                         <span class="product-bottom_input">
                             Số lượng:
-                            <input type="number" min="0" max="100" size="3">
-                            <button type="submit">Đặt Hàng</button>
+                            <input id="sp007" type="number" min="0" max="100" size="3">
+                            <button onclick="addCart('sp007')">Đặt Hàng</button>
                         </span>
                     </div>
                 </div>
@@ -203,8 +203,8 @@
                     <div class="product-bottom">
                         <span class="product-bottom_input">
                             Số lượng:
-                            <input type="number" min="0" max="100" size="3">
-                            <button type="submit">Đặt Hàng</button>
+                            <input id="sp008" type="number" min="0" max="100" size="3">
+                            <button onclick="addCart('sp008')">Đặt Hàng</button>
                         </span>
                     </div>
                 </div>
@@ -222,8 +222,8 @@
                     <div class="product-bottom">
                         <span class="product-bottom_input">
                             Số lượng:
-                            <input type="number" min="0" max="100" size="3">
-                            <button type="submit">Đặt Hàng</button>
+                            <input id="sp009" type="number" min="0" max="100" size="3">
+                            <button onclick="addCart('sp009')">Đặt Hàng</button>
                         </span>
                     </div>
                 </div>
@@ -243,6 +243,7 @@
         </p>
 
     </footer>
+    <script src="../asset/js/donhang.js"></script>
     <script src="../asset/js/main.js"></script>
 </body>
 

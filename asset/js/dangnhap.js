@@ -1,5 +1,6 @@
 
-var data = JSON.parse(sessionStorage.getItem('user'));
+
+var data = JSON.parse(localStorage.getItem('user'));
 function login(frm){
     if(data.email != frm.email.value  || data.password !== frm.password.value){
         alert("Email hoặc mật khẩu không chinh xác")
